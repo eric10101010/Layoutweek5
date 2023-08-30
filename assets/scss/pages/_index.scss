@@ -1,3 +1,105 @@
-.index-title {
-  font-size: 100px;
+.assignment {
+  &Menu {
+    padding: 32px 0;
+    h2 {
+      margin-right: 50px;
+      font-size: 24px;
+    }
+  }
+  &Toggle {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    p {
+      font-size: 12px;
+      color: #6C757D;
+    }
+  }
+  &All {
+    display: flex;
+    column-gap: 16px;
+
+  }
+  &List {
+    width: 320px;
+  }
+  &Table {
+    width: 584px;
+  }
+  &Item {
+    outline: 1px solid #CED4DA;
+    padding: 12px;
+    p {
+      font-size: 12px;
+      color: #212529;
+    }
+    span {
+      font-size: 12px;
+      color: #6C757D;
+    }
+  }
+  &Head {
+    background-color: #F8F9FA;
+    outline: 1px solid #CED4DA;
+    padding: 12px 16px;
+    p {
+      font-size: 12px;
+    }
+  }
+  &Body {
+    p {
+      font-size: 14px;
+    }
+    p, a {
+      margin-left: 64px;
+      margin-right: 32px;
+    }
+    figure {
+      font-size: 24px;
+    }
+    span {
+      font-size: 12px;
+      color: #6C757D;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  &Foot {
+    width: 584px;
+    span {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &Button {
+    width: 584px;
+  }
+}
+.downloadBtn {
+  width: 176px;
+  padding: 10px 0;
+  text-align: center;
+  color: #212529;
+  background-color: #F8F9FA;
+  border: 1px solid #CED4DA;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.btnGroup a {
+  outline: 1px solid $success;
+  padding: 8px 32.5px;
+}
+.mr23 {
+  margin-right: 23px;
+}
+.pb22 {
+  padding-bottom: 22px;
+}
+.borderGray {
+  border: 1px solid #CED4DA;
+  margin-left: 64px;
+  margin-right: 32px;
 }

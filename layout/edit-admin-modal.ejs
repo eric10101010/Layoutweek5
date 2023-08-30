@@ -1,0 +1,106 @@
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content p-5">
+            <div class="modalHeader d-flex align-items-center justify-content-between mb-5">
+                <h2 class="modalTitle fs-4" id="editModal">Edit Admin</h2>
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                    <span class="material-icons text-dark">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="modalBody">
+                <form action="post">
+                    <ul>
+                        <li>
+                            <h3 class="fw-bold mb-3 fs-5">Account</h3>
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label mb-1">Name</label>
+                                <input type="text" class="form-control p-3 bg-gray" id="InputName" aria-describedby="emailHelp" value="Emir Wicks" readonly>
+                            </div>
+                            <div>
+                                <label for="inputEmail" class="form-label mb-1">Email</label>
+                                <input type="email" class="form-control p-3 bg-gray" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" value="emir.wicks@mail.com" readonly>
+                            </div>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h3 class="fw-bold fs-5 mb-3">Verification</h3>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="fw-bold d-flex align-items-center">
+                                    <span class="material-icons fs-5" style="margin-right: 10px;">
+                                        check_circle
+                                    </span>
+                                    Verified
+                                </p>
+                                <date style="font-size: 14px;">2020/4/12</date>
+                            </div>
+                            <button class="btn btn-outline-success w-100" type="button" disabled style="margin-top: 18px;">
+                                Send Verification Mail
+                            </button>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fw-bold fs-5 mb-3">Access Level</h2>
+                            <select class="form-select p-3 border border-dark" aria-label="Default select example">
+                                <option selected>Admin</option>
+                                <option value="1">One</option>
+                            </select>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fw-bold fs-5 mb-3">Custom Access</h2>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Lecture">
+                                <label class="form-check-label ms-2" for="Lecture">
+                                    Lecture
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Coupon">
+                                <label class="form-check-label ms-2" for="Coupon">
+                                    Coupon
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Message">
+                                <label class="form-check-label ms-2" for="Message">
+                                    Message
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Setting">
+                                <label class="form-check-label ms-2" for="Setting">
+                                    Setting
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Task Menu">
+                                <label class="form-check-label ms-2" for="Task Menu">
+                                    Task Menu
+                                </label>
+                            </div>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fs-5 fw-bold">Deactivate Account</h2>
+                            <p class="fw-bold text-danger d-flex align-items-center my-3">
+                                <span class="material-icons me-2" style="vertical-align: bottom;">
+                                    warning
+                                </span>This cannot be undone!
+                            </p>
+                            <button class="btn btn-outline-danger w-100 fw-bold py-3" type="button">
+                                Deactivate This Account
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modalFooter d-flex justify-content-end mt-7">
+                <button type="button" class="btn btn-outline-success fw-bold py-2 px-5 me-3" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success py-2 px-5">Update</button>
+            </div>
+        </div>
+    </div>
+</div>

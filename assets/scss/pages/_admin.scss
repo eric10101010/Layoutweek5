@@ -1,0 +1,18 @@
+.admin {
+    width: 984px;
+    &Head {
+        border-bottom: 1px solid #212529;
+    }
+    &List {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    &Box {
+        border-bottom: 1px solid #CED4DA;
+        td {
+            padding-top: 19px;
+            padding-bottom: 17px;
+        }
+    }
+}

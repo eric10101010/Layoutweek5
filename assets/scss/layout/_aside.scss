@@ -1,0 +1,42 @@
+.aside {
+  background-color: #F8F9FA;
+  height: 100vh;
+  width: 296px;
+  &Link {
+    position: relative;
+    &.active {
+      color: $success;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 32px;
+        border-left: 4px solid $success;
+      }
+    }
+  }
+  &Item {
+    a {
+      color: #212529;
+      font-weight: bold;
+      &:hover {
+        color: $success;
+      }
+    }
+    &:hover {
+      color: $success;
+    }
+  }
+  &User {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 14px;
+      color: #6C757D;
+    }
+  }
+}
