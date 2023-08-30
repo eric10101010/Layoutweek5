@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <title>Admin</title>
+      <script type="module" crossorigin src="/week5Layout/assets/bootstrap.bundle-16cc0b87.js"></script>
+      <link rel="stylesheet" href="/week5Layout/assets/bootstrap-969f7f0d.css">
+    </head>
+    <style>
+        #admin{
+            color: #198754;
+            }
+        #admin::before {
+            border-left: 4px solid #198754;
+            position: absolute;
+            content: "";
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <body>
+        <div class="d-flex">
+            <nav class="aside d-flex flex-column justify-content-between">
+    <div class="asideBox">
+        <img src="/week5Layout/assets/logo-ANSWER-5336fb45.svg" alt="logo" class="ms-4 mt-4">
+        <ul class="asideList mt-5">
+            <li class="asideItem d-flex align-items-center mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        insert_chart
+                    </span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        forum
+                    </span>
+                    Question
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="index.html" class="asideLink d-flex align-items-center" id="assignment">
+                    <span class="material-icons pe-3 ms-5">
+                        assignment
+                    </span>
+                    Assignment
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        video_library
+                    </span>
+                    Course
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="admin.html" class="asideLink d-flex align-items-center" id="admin">
+                    <span class="material-icons pe-3 ms-5">
+                        group
+                    </span>
+                    Admin
+                </a>
+            </li>
+            <li class="asideItem">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        settings
+                    </span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul class="asideUser d-flex align-items-center p-5">
+        <img src="/week5Layout/assets/andychen-f14fef59.jpeg" alt="andychen">
+        <div class="d-flex flex-column ms-3">
+            <h3 class="pb-1 fw-bold">Andy Chen</h3>
+            <p>andy0401@mail.com</p>
+        </div>
+    </ul>
+</nav>            <section class="admin">
+                <div class="container container-fluid">
+                    <nav class="admibBar py-5">
+                        <ul class="adminList d-flex justify-content-between align-items-center">
+                            <li class="d-flex align-items-center">
+                                <h2 class="me-7 fw-bold">Admin</h2>
+                                    <a href="#" class="d-flex" role="button"
+                                        data-bs-toggle="modal" data-bs-target="#newModal">
+                                        <span class="material-icons text-success me-2" style="font-size: 24px;">
+                                            add
+                                        </span>
+                                        <h3 class="fw-bold">Add New Admin</h3>
+                                    </a>
+                            </li>
+                            <li>
+                                <a class="d-inline-block me-4" href="#">
+                                    <span class="material-icons text-dark">
+                                        search
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#">
+                                    <span class="material-icons text-dark">
+                                        notifications_active
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <table class="table table-hover mb-0">
+                    <thead>
+                        <tr class="border-dark adminHead">
+                            <th scope="col" class="fw-bold">
+                                ID
+                                <span class="material-icons text-success ms-2" style="font-size: 12px;">
+                                    arrow_downward
+                                </span>
+                            </th>
+                            <th scope="col" class="fw-bold">Name</th>
+                            <th scope="col" class="fw-bold">Email</th>
+                            <th scope="col" class="fw-bold">Verified</th>
+                            <th scope="col" class="fw-bold"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="adminBox">
+                            <th scope="row">#1</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Emir Wicks
+                                </a>
+                            </td>
+                            <td>emir.wicks@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#2</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Zaina Goldsmith
+                                </a>
+                            </td>
+                            <td>zaina.goldsmith@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#3</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Mahima Lopez
+                                </a>
+                            </td>
+                            <td>mahima.lopez@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#4</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Pharrell Murray
+                                </a>
+                            </td>
+                            <td>pharrell.murray@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#5</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Annika Mcbride
+                                </a>
+                            </td>
+                            <td>annika.mcbride@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#6</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Fatimah Clark
+                                </a>
+                            </td>
+                            <td>fatimah.clark@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#7</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Klaudia Rhodes
+                                </a>
+                            </td>
+                            <td>klaudia.rhodes@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#8</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Tillie Lucero
+                                </a>
+                            </td>
+                            <td>tillie.lucero@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#9</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Sabrina Stephenson
+                                </a>
+                            </td>
+                            <td>sabrina.stephenson@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="adminBox">
+                            <th scope="row">#10</th>
+                            <td>
+                                <a class="d-inline-block" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    Annie Smith
+                                </a>
+                            </td>
+                            <td>annie.smith@mail.com</td>
+                            <td>Yes</td>
+                            <td class="d-flex justify-content-end">
+                                <a class="d-inline-block me-4" href="#" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#viewModal">
+                                    <span class="material-icons">
+                                        visibility
+                                    </span>
+                                </a>
+                                <a class="d-inline-block" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <ul class="page d-flex align-items-center justify-content-end pb-5">
+                        <li class="pageItem">
+                            <a href="#">
+                                <span class="material-icons text-success">
+                                    chevron_left
+                                </span> 
+                            </a>
+                        </li>
+                        <li class="pageItem">
+                            <a href="#" class="bg-success text-white">
+                                1
+                            </a>
+                        </li>
+                        <li class="pageItem">
+                            <a href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="pageItem">
+                            <a href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="pageItem">
+                            <a href="#">
+                                <span class="material-icons text-success">
+                                    chevron_right
+                                </span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="newModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content p-5">
+            <div class="modalHeader d-flex align-items-center justify-content-between mb-5">
+                <h2 class="modalTitle fs-4 fw-bold" id="newModal">New Admin</h2>
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                    <span class="material-icons text-dark">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="modalBody">
+                <form action="post">
+                    <ul>
+                        <li>
+                            <h3 class="fw-bold fs-5 mb-3">Account</h3>
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label mb-1" style="font-size: 14px;">Name</label>
+                                <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail1" class="form-label mb-1" style="font-size: 14px;">Email</label>
+                                <input type="email" class="form-control" id="inputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h3 class="fw-bold fs-5" style="padding-bottom: 18px;">Verification</h3>
+                            <p class="d-flex align-items-center">
+                                <span class="material-icons text-danger fw-bold me-2" style="vertical-align: bottom;">
+                                    warning
+                                </span>
+                                Unverified
+                            </p>
+                            <button class="btn btn-outline-success mt-3 w-100 py-3" type="button">Send Verification Mail</button>
+                        </li>
+                        <hr class="my-4">
+                        <li class="mt-3">
+                            <h3 class="fw-bold fs-5 mb-3">Access Level</h3>
+                            <select class="form-select p-3 border border-dark" aria-label="Default select example" style="color : #6C757D;">
+                                <option selected>-Choose access level-</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h3 class="fw-bold fs-5 mb-3">Custom Access</h3>
+                            <div class="form-check mb-3 d-flex align-items-center ms-3">
+                                <input class="form-check-input border border-dark" type="checkbox" value="" id="Lecture">
+                                <label class="form-check-label ms-2" for="Lecture">
+                                    Lecture
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 d-flex align-items-center ms-3">
+                                <input class="form-check-input border border-dark" type="checkbox" value="" id="Coupon">
+                                <label class="form-check-label ms-2" for="Coupon">
+                                    Coupon
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 d-flex align-items-center ms-3">
+                                <input class="form-check-input border border-dark" type="checkbox" value="" id="Message">
+                                <label class="form-check-label ms-2" for="Message">
+                                    Message
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 d-flex align-items-center ms-3">
+                                <input class="form-check-input border border-dark" type="checkbox" value="" id="Setting">
+                                <label class="form-check-label ms-2" for="Setting">
+                                    Setting
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 d-flex align-items-center ms-3">
+                                <input class="form-check-input border border-dark" type="checkbox" value="" id="Task Menu">
+                                <label class="form-check-label ms-2" for="Task Menu">
+                                    Task Menu
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modalFooter d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success px-5 py-2 me-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success px-5 py-2">Add</button>
+            </div>
+        </div>
+    </div>
+</div>            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content p-5">
+            <div class="modalHeader d-flex align-items-center justify-content-between mb-5">
+                <h2 class="modalTitle fs-4" id="editModal">Edit Admin</h2>
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                    <span class="material-icons text-dark">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="modalBody">
+                <form action="post">
+                    <ul>
+                        <li>
+                            <h3 class="fw-bold mb-3 fs-5">Account</h3>
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label mb-1">Name</label>
+                                <input type="text" class="form-control p-3 bg-gray" id="InputName" aria-describedby="emailHelp" value="Emir Wicks" readonly>
+                            </div>
+                            <div>
+                                <label for="inputEmail" class="form-label mb-1">Email</label>
+                                <input type="email" class="form-control p-3 bg-gray" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" value="emir.wicks@mail.com" readonly>
+                            </div>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h3 class="fw-bold fs-5 mb-3">Verification</h3>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="fw-bold d-flex align-items-center">
+                                    <span class="material-icons fs-5" style="margin-right: 10px;">
+                                        check_circle
+                                    </span>
+                                    Verified
+                                </p>
+                                <date style="font-size: 14px;">2020/4/12</date>
+                            </div>
+                            <button class="btn btn-outline-success w-100" type="button" disabled style="margin-top: 18px;">
+                                Send Verification Mail
+                            </button>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fw-bold fs-5 mb-3">Access Level</h2>
+                            <select class="form-select p-3 border border-dark" aria-label="Default select example">
+                                <option selected>Admin</option>
+                                <option value="1">One</option>
+                            </select>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fw-bold fs-5 mb-3">Custom Access</h2>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Lecture">
+                                <label class="form-check-label ms-2" for="Lecture">
+                                    Lecture
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Coupon">
+                                <label class="form-check-label ms-2" for="Coupon">
+                                    Coupon
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Message">
+                                <label class="form-check-label ms-2" for="Message">
+                                    Message
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Setting">
+                                <label class="form-check-label ms-2" for="Setting">
+                                    Setting
+                                </label>
+                            </div>
+                            <div class="form-check mb-3 ms-3 d-flex align-items-center">
+                                <input class="form-check-input border-dark border-2" type="checkbox" value="" id="Task Menu">
+                                <label class="form-check-label ms-2" for="Task Menu">
+                                    Task Menu
+                                </label>
+                            </div>
+                        </li>
+                        <hr class="my-4">
+                        <li>
+                            <h2 class="fs-5 fw-bold">Deactivate Account</h2>
+                            <p class="fw-bold text-danger d-flex align-items-center my-3">
+                                <span class="material-icons me-2" style="vertical-align: bottom;">
+                                    warning
+                                </span>This cannot be undone!
+                            </p>
+                            <button class="btn btn-outline-danger w-100 fw-bold py-3" type="button">
+                                Deactivate This Account
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modalFooter d-flex justify-content-end mt-7">
+                <button type="button" class="btn btn-outline-success fw-bold py-2 px-5 me-3" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success py-2 px-5">Update</button>
+            </div>
+        </div>
+    </div>
+</div>            <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content d-flex flex-row p-5 justify-content-between" style="width: 480px;">
+        <div class="modalphoto overflow-hidden me-4">
+            <img class="object-fit-cover img-fluid" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emir.jpeg?raw=true" alt="emir.jpeg"
+            style="width: 141px; height: 141px;">
+        </div>
+        <div class="modalBody" style="width: 248px;">
+            <div class="d-flex justify-content-between align-items-start">
+                <span style="line-height: 19px;">#1</span>
+                <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close" style="height: 24px;">
+                  <span class="material-icons text-dark">
+                      close
+                  </span>
+                </button>
+            </div>
+            <h2 style="margin-top: 3px; line-height: 19px;">Admin</h2>
+            <h3 class="fs-4 fw-bold mb-2" id="viewModal" style="line-height: 29px;">Emir Wicks</h3>
+            <h4 style="color: #6C757D; line-height: 17px; font-size: 14px;">emir.wicks@mail.com</h4>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordionHeader">
+                    <button class="accordion-button collapsed shadow-none px-0 pb-1 pt-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
+                    style="font-size: 14px; line-height: 17px;">
+                        <span class="bg-gray px-2 py-1">Verified</span> 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordionBody">
+                        <div class="d-flex mt-5">
+                            <button class="btn btn-outline-danger py-2 px-5 me-3" type="button">
+                              Deactivate
+                            </button>
+                            <button class="btn btn-success py-2 px-5" type="button">
+                              Edit
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>        </div>
+    
+    </body>
+</html>

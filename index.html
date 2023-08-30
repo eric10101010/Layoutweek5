@@ -4,19 +4,317 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4cfea7bd.css">
+    <script type="module" crossorigin src="/week5Layout/assets/bootstrap.bundle-16cc0b87.js"></script>
+    <link rel="stylesheet" href="/week5Layout/assets/bootstrap-969f7f0d.css">
   </head>
+  <style>
+    #assignment{
+      color: green;
+    }
+    #assignment::before {
+      border-left: 4px solid green;
+      position: absolute;
+      content: "";
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  </style>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/web-layout-training-vite/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
-
-    <footer class="footer">我是 footer</footer>
+    <div class="d-flex">
+      <nav class="aside d-flex flex-column justify-content-between">
+    <div class="asideBox">
+        <img src="/week5Layout/assets/logo-ANSWER-5336fb45.svg" alt="logo" class="ms-4 mt-4">
+        <ul class="asideList mt-5">
+            <li class="asideItem d-flex align-items-center mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        insert_chart
+                    </span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        forum
+                    </span>
+                    Question
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="index.html" class="asideLink d-flex align-items-center" id="assignment">
+                    <span class="material-icons pe-3 ms-5">
+                        assignment
+                    </span>
+                    Assignment
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        video_library
+                    </span>
+                    Course
+                </a>
+            </li>
+            <li class="asideItem mb-4">
+                <a href="admin.html" class="asideLink d-flex align-items-center" id="admin">
+                    <span class="material-icons pe-3 ms-5">
+                        group
+                    </span>
+                    Admin
+                </a>
+            </li>
+            <li class="asideItem">
+                <a href="#" class="asideLink d-flex align-items-center">
+                    <span class="material-icons pe-3 ms-5">
+                        settings
+                    </span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul class="asideUser d-flex align-items-center p-5">
+        <img src="/week5Layout/assets/andychen-f14fef59.jpeg" alt="andychen">
+        <div class="d-flex flex-column ms-3">
+            <h3 class="pb-1 fw-bold">Andy Chen</h3>
+            <p>andy0401@mail.com</p>
+        </div>
+    </ul>
+</nav>      <section class="assignment">
+        <div class="container">
+          <nav class="assignmentBar">
+            <ul class="assignmentMenu d-flex justify-content-between">
+              <li class="d-flex align-items-center">
+                <h2 class="fw-bold">Assignment</h2>
+                <div class="d-flex">
+                  <h3 class="fw-bold">All Courses</h3>
+                  <span class="material-icons me-0 ms-2 text-success fs-4">
+                    expand_more
+                  </span>
+                </div>
+              </li>
+              <li>
+                <a class="d-inline-block" href="#">
+                  <span class="material-icons text-dark me-4">
+                      search
+                  </span>
+                </a>
+                <a class="d-inline-block" href="#">
+                    <span class="material-icons text-dark">
+                        notifications_active
+                    </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="assignmentToggle d-flex justify-content-between">
+              <li class="d-flex align-items-center">
+                <h4>All (4)</h4>
+                <span class="material-icons me-0 ms-2 text-success fs-4">
+                  expand_more
+                </span>
+              </li>
+              <li>
+                <p>2 comments</p>
+              </li>
+            </ul>
+          </nav>
+          <div class="assignmentAll row mx-0">
+            <ul class="assignmentList col-4 px-0">
+              <li class="assignmentItem bg-gray">
+                <div class="d-flex justify-content-between pb-1">
+                  <p>Chapter Assignment 2</p>
+                  <p>4 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="fw-bold">Please check this file…</h3>
+                  <span>Emily Wang</span>
+                </div>
+              </li>
+              <li class="assignmentItem">
+                <div class="d-flex justify-content-between pb-1">
+                  <p>Chapter Assignment 1</p>
+                  <p>12 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="fw-bold">My Homework</h3>
+                  <span>David Xu</span>
+                </div>
+              </li>
+              <li class="assignmentItem">
+                <div class="d-flex justify-content-between pb-1">
+                  <p>Final Assignment</p>
+                  <p>18 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="fw-bold">Have a problem with this…</h3>
+                  <span>Tony Wei</span>
+                </div>
+              </li>
+              <li class="assignmentItem">
+                <div class="d-flex justify-content-between pb-1">
+                  <p>Final Assignment</p>
+                  <p>19 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="fw-bold">Did I do it right?</h3>
+                  <span>Christina Lin</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="assignmentTable col-8 px-0">
+              <li class="assignmentHead">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex flex-column">
+                    <p>Chapter Assignment 2 / HTML&CSS</p>
+                    <h3 class="fw-bold">Please check this file for me, thanks!</h3>
+                  </div>
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </div>
+              </li>
+              <li class="assignmentBody border border-bottom-0">
+                <div class="d-flex pt-3">
+                  <img src="/week5Layout/assets/emilywang-cc5a821b.jpeg" alt="emilywang" class="ms-3 me-2">
+                  <div class="d-flex flex-column">
+                    <h3 class="fw-bold">Emily Wang</h3>
+                    <span>10:38 AM (4 hours ago)</span>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <p class="py-3">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-gray px-1">div</span> is bigger than the height of the <span class="text-success bg-gray px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                    <br>What is the gap or extra space below image?
+                  </p>
+                </div>
+                <a href="#" class="btn btn-light border bg-gray" download="HW-2-David.zip">HW-2-David.zip</a>
+                <hr class="borderGray">
+              </li>
+              <!-- TabChang -->
+              <li class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="markasread" role="tabpanel" aria-labelledby="markasread-tab"
+                  tabindex="0">
+                  <div class="assignmentBody border border-top-0">
+                    <div class=" d-flex">
+                      <img src="/week5Layout/assets/andychen-f14fef59.jpeg" alt="andychen" class="ms-3 me-2" style="min-width: 40px;">
+                      <div class="d-flex justify-content-between w-100">
+                        <div class="d-flex flex-column ps-2">
+                          <h3>Andy Chen (You)</h3>
+                          <span>13:24 AM (1 hours ago)</span>
+                        </div>
+                        <div class="d-flex me-5">
+                          <figure class="material-symbols-outlined me-4">
+                            star
+                          </figure>
+                          <figure class="material-icons">
+                            edit
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <p class="pt-3 pb22">
+                        Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        <br>
+                        <br>You can:
+                        <br>
+                        <br>　•adjust the <span class="text-success bg-gray px-1">vertical-align</span> of the image to position it elsewhere 
+                        <br>(e.g. the <span class="text-success bg-gray px-1">middle</span> ) or 
+                        <br>　• change the <span class="text-success bg-gray px-1">display</span> so it isn’t inline.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <ul class="assignmentButton ms-auto justify-content-between nav nav-pills px-0 pt-3" id="pills-tab" role="tablist">
+                    <li class="nav-item d-flex" role="presentation">
+                      <button class="btn btn-white px-0 me-4" type="button"><span class="material-icons fs-4">
+                          navigate_before
+                        </span></button>
+                      <button class="btn btn-white px-0" type="button"><span class="material-icons fs-4">
+                          navigate_next
+                        </span></button>
+                    </li>
+                    <li class="d-flex" role="presentation">
+                      <button class="btn btn-outline-success me-3 rounded-0 px-5" id="markasread-tab"
+                        data-bs-toggle="pill" data-bs-target="#markasread" type="button" role="tab"
+                        aria-controls="markasread" aria-selected="true">
+                        Mark as read
+                      </button>
+                      <button class="btn btn-outline-success rounded-0 px-5 active" id="reply-tab" data-bs-toggle="pill"
+                        data-bs-target="#reply" type="button" role="tab" aria-controls="reply"
+                        aria-selected="true">
+                        Reply
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- reply -->
+              <li class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade border border-top-0" id="reply" role="tabpanel" aria-labelledby="reply-tab"
+                  tabindex="0">
+                  <ul class="bg-gray px-4 py-3 d-flex list-unstyled mb-0 border border-start-0 border-end-0 flex-wrap">
+                    <li>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Body Text
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">regular</a></li>
+                          <li><a class="dropdown-item" href="#">blod</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          format_bold
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          format_italic
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          format_list_bulleted
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          format_list_numbered
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          image
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          link
+                        </span></button></li>
+                    <li><button type="button" class="btn"><span class="material-symbols-outlined">
+                          code
+                        </span></button></li>
+                  </ul>
+                  <textarea class="border-0 w-100 px-4 py-3 text-area-resize-none" name="replyanswer" id="eplyanswer"
+                    cols="30" rows="5" placeholder="Reply an answer…"></textarea>
+                  <!-- tab -->
+                  <ul class="justify-content-end nav nav-pills m-3" id="pills-tab" role="tablist">
+                    <li class="nav-item d-flex" role="presentation">
+                      <button class="btn btn-outline-success me-3 rounded-0" id="markasread-tab" data-bs-toggle="pill"
+                        data-bs-target="#markasread" type="button" role="tab" aria-controls="markasread"
+                        aria-selected="true">Cancel</button>
+                      <button class="btn btn-outline-success rounded-0 active" id="reply-tab" data-bs-toggle="pill"
+                        data-bs-target="#reply" type="button" role="tab" aria-controls="reply"
+                        aria-selected="true">Reply</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </section>
+    </div>
     
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
   </body>
 </html>
